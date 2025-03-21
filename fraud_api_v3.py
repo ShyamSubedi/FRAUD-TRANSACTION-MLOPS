@@ -8,7 +8,8 @@ import sqlite3
 app = FastAPI()
 
 model = xgb.Booster()
-model.load_model("model.load_model("fraud_detection_v3_model.json")")
+model.load_model("fraud_detection_v3_model.json")
+
 
 DEFAULT_FEATURES = {
     'step': 743,
